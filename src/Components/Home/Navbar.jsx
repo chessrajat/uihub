@@ -14,7 +14,7 @@ const Navbar = () => {
           </p>
         </Link>
         <div className="ml-10">
-          <button className="font-semibold hover:text-violet-700">Browse</button>
+          <Link to="/browse" className="font-semibold hover:text-violet-700">Browse</Link>
         </div>
       </div>
       <div>
