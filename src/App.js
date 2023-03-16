@@ -9,9 +9,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Browse from "./Components/Browse/Browse";
+import ShowCodeContainer from "./Components/Browse/ShowCodeContainer";
 import Home from "./Components/Home/Home";
 import RootLayout from "./Layouts/RootLayout";
-import Button1 from "./UIElements/Buttons/Button1";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,7 +22,16 @@ const router = createBrowserRouter(
       {/* Elements */}
       <Route path="/browse/buttons" element={<Outlet />}>
         <Route index element={<Browse title="Buttons UI" />} />
-        <Route path="button1" element={<Button1 />} />
+        <Route
+          path="button1"
+          element={
+            <ShowCodeContainer
+              classes="flex justify-center items-center"
+              element="Buttons/Button1"
+              codeString="/code/buttons/button1.txt"
+            />
+          }
+        />
       </Route>
     </Route>
   )
