@@ -10,9 +10,12 @@ const ElementContainer = ({ element }) => {
   );
   return (
     <div>
-      <div className="p-10 h-80 flex justify-center items-center border rounded-tl-lg rounded-tr-lg">
+      <div className="p-2 h-80 flex flex-wrap justify-center items-center 
+                      border rounded-tl-lg rounded-tr-lg">
         <React.Suspense fallback={<Fallback />}>
-          <Component />
+          <div className="overflow-hidden">
+            <Component />
+          </div>
         </React.Suspense>
       </div>
       <div className="p-2 bg-slate-200 flex justify-between items-center rounded-br-lg rounded-bl-lg">
@@ -36,7 +39,7 @@ const ElementContainer = ({ element }) => {
           </p>
         </div>
         <Link
-          to="/browse/buttons/button1"
+          to={`/browse/${element.element}`}
           className="py-1 px-3 border-2 border-violet-600 text-violet-700 rounded-md
                             hover:bg-violet-200"
         >

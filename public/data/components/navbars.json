@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": false,
+    "element": "navbars/navbar1",
+    "type": "navbars",
+    "code": "/code/navbars/navbar1.txt"
+  }
+]

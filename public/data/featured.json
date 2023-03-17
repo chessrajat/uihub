@@ -1,11 +1,20 @@
 [
-    {
-        "name": "",
-        "author": "Drag0",
-        "profile_link": "https://github.com/chessrajat",
-        "responsive": true,
-        "element": "buttons/button1",
-        "type": "button",
-        "code": "/code/buttons/button1.txt"
-    }
+  {
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "buttons/button1",
+    "type": "button",
+    "code": "/code/buttons/button1.txt"
+  },
+  {
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": false,
+    "element": "navbars/navbar1",
+    "type": "navbars",
+    "code": "/code/navbars/navbar1.txt"
+  }
 ]
