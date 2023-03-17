@@ -1,8 +1,10 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { Link } from "react-router-dom";
 
-const SideNav = ({ categories }) => {
+const SideNav = ({ categories, component, search }) => {
+  const activeClasses = "text-violet-800 bg-violet-200";
   return (
     <div className="px-5 py-8">
       <div className="relative flex items-center focus-within:text-violet-800 text-violet-700">
@@ -10,6 +12,7 @@ const SideNav = ({ categories }) => {
           type="text"
           name="search"
           placeholder="Search..."
+          onChange={search}
           autoComplete="off"
           className="w-full p-2 rounded-md mx-auto font-medium ring-none text-gray-900
                    bg-gray-100 border-2 border-violet-700 focus:bg-violet-100
@@ -21,21 +24,29 @@ const SideNav = ({ categories }) => {
         />
       </div>
       <div className="pt-8">
-        <button
-          className="w-full text-left px-5 py-2 my-1 bg-violet-200 rounded-md
-                            font-semibold text-violet-800"
-        >
-          Featured
-        </button>
+        <Link to="/browse">
+          <button
+            className={`w-full text-left px-5 py-2 my-1 rounded-md
+                            font-semibold hover:bg-violet-200 ${
+                              component === "" && activeClasses
+                            }`}
+          >
+            Featured
+          </button>
+        </Link>
+
         <div className="border my-2 border-slate-500"></div>
         {categories.map((category, i) => (
-          <button
-            key={i}
-            className="w-full text-left px-5 py-2 my-1 rounded-md
-                              font-semibold hover:bg-violet-200"
-          >
-            {category}
-          </button>
+          <Link key={i} to={`/browse/${category.id}`}>
+            <button
+              className={`w-full text-left px-5 py-2 my-1 rounded-md
+                              font-semibold hover:bg-violet-200  ${
+                                category.id === component && activeClasses
+                              }`}
+            >
+              {category.text}
+            </button>
+          </Link>
         ))}
       </div>
     </div>

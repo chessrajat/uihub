@@ -1,5 +1,3 @@
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import {
   createBrowserRouter,
@@ -20,18 +18,9 @@ const router = createBrowserRouter(
       <Route path="browse" element={<Browse title="Browse UI Components" />} />
 
       {/* Elements */}
-      <Route path="/browse/buttons" element={<Outlet />}>
-        <Route index element={<Browse title="Buttons UI" />} />
-        <Route
-          path="button1"
-          element={
-            <ShowCodeContainer
-              classes="flex justify-center items-center"
-              element="Buttons/Button1"
-              codeString="/code/buttons/button1.txt"
-            />
-          }
-        />
+      <Route path="/browse/:ComponentCategory" element={<Outlet />}>
+        <Route index element={<Browse title="Browse UI Components" />} />
+        <Route path=":ElementId" element={<ShowCodeContainer />} />
       </Route>
     </Route>
   )

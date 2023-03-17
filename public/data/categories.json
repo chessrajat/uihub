@@ -1,1 +1,10 @@
-["buttons", "Navbars", "Cards"]
+[
+  {
+    "id": "buttons",
+    "text": "Buttons"
+  },
+  {
+    "id": "navbars",
+    "text": "Navbars"
+  }
+]

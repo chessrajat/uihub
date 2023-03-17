@@ -9,31 +9,58 @@ import Fallback from "./Fallback";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
+import { useParams } from "react-router-dom";
 
-const ShowCodeContainer = ({ classes, element, codeString }) => {
+const ShowCodeContainer = () => {
   const [copied, setCopied] = useState(false);
   const [code, setCode] = useState("");
+  const [isCenter, setIsCenter] = useState(false);
 
-  const Component = React.lazy(() => import(`../../UIElements/${element}`));
+  const params = useParams();
+  const componentCategory = params.ComponentCategory || "";
+  const componentName = params.ElementId || "";
+
+  const Component = React.lazy(() =>
+    import(`../../UIElements/${componentCategory}/${componentName}`)
+  );
 
   useEffect(() => {
-    fetch(codeString)
+    fetch(`/code/${componentCategory}/${componentName}.txt`)
       .then((response) => response.text())
       .then((data) => {
         setCode(data);
       });
-  }, []);
+  }, [componentCategory, componentName]);
 
   return (
     <div className="font-poppins">
       <Navbar />
       <div className="p-16">
-        <div className={`bg-white shadow-lg p-12 rounded-lg border ${classes}`}>
+        <div
+          className={`flex bg-white shadow-lg p-8 rounded-lg border ${
+            isCenter && "justify-center"
+          }`}
+        >
           <React.Suspense fallback={<Fallback />}>
             <Component />
           </React.Suspense>
         </div>
-        <div className="my-5"></div>
+        <div className="my-8">
+          <div className="flex items-center">
+            <p className="mx-3 font-bold">Controls</p>
+            <div className="mx-5">
+              <button
+                onClick={() => setIsCenter(!isCenter)}
+                className={`py-2 px-4 rounded-md
+                     ${
+                       isCenter ? "bg-violet-800 text-white " : "bg-violet-200"
+                     }`}
+              >
+                Center
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="relative">
           <CopyToClipboard
             text={code}

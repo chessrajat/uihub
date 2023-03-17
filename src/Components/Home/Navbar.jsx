@@ -14,13 +14,17 @@ const Navbar = () => {
           </p>
         </Link>
         <div className="ml-10">
-          <Link to="/browse" className="font-semibold hover:text-violet-700">Browse</Link>
+          <Link to="/browse" className="font-semibold hover:text-violet-700">
+            Browse
+          </Link>
         </div>
       </div>
       <div>
-        <button className="py-2 px-4 bg-violet-500 rounded-md text-cyan-50 hover:bg-violet-700">
-          <FontAwesomeIcon icon={faGithub} /> Contribute with Github
-        </button>
+        <Link to="https://github.com/chessrajat/tailwind-uihub" target="_blank">
+          <button className="py-2 px-4 bg-violet-500 rounded-md text-cyan-50 hover:bg-violet-700">
+            <FontAwesomeIcon icon={faGithub} /> Contribute with Github
+          </button>
+        </Link>
       </div>
     </nav>
   );
