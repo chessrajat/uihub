@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-        <Link to="https://github.com/chessrajat/tailwind-uihub" target="_blank">
+        <Link to="https://github.com/chessrajat/uihub" target="_blank">
           <button className="py-2 px-4 bg-violet-500 rounded-md text-cyan-50 hover:bg-violet-700">
             <FontAwesomeIcon icon={faGithub} /> Contribute with Github
           </button>

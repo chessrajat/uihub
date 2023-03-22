@@ -6,7 +6,8 @@
     "responsive": true,
     "element": "buttons/button1",
     "type": "button",
-    "code": "/code/buttons/button1.txt"
+    "code": "/code/buttons/button1.txt",
+    "img": "/img/components/buttons/button1.png"
   },
   {
     "name": "",
@@ -15,6 +16,7 @@
     "responsive": false,
     "element": "navbars/navbar1",
     "type": "navbars",
-    "code": "/code/navbars/navbar1.txt"
+    "code": "/code/navbars/navbar1.txt",
+    "img": "/img/components/navbars/navbar1.png"
   }
 ]

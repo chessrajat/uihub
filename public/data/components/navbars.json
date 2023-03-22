@@ -6,6 +6,7 @@
     "responsive": false,
     "element": "navbars/navbar1",
     "type": "navbars",
-    "code": "/code/navbars/navbar1.txt"
+    "code": "/code/navbars/navbar1.txt",
+    "img": "/img/components/navbars/navbar1.png"
   }
 ]

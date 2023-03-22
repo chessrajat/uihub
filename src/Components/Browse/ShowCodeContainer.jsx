@@ -42,9 +42,7 @@ const ShowCodeContainer = () => {
           }`}
         >
           <React.Suspense fallback={<Fallback />}>
-            <div className="w-full overflow-hidden">
-              <Component />
-            </div>
+            <Component />
           </React.Suspense>
         </div>
         <div className="my-8">

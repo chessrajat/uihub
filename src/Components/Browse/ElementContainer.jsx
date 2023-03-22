@@ -5,18 +5,13 @@ import { Link } from "react-router-dom";
 import Fallback from "./Fallback";
 
 const ElementContainer = ({ element }) => {
-  const Component = React.lazy(() =>
-    import(`../../UIElements/${element.element}`)
-  );
   return (
     <div>
-      <div className="p-2 h-80 flex flex-wrap justify-center items-center 
-                      border rounded-tl-lg rounded-tr-lg">
-        <React.Suspense fallback={<Fallback />}>
-          <div className="overflow-hidden">
-            <Component />
-          </div>
-        </React.Suspense>
+      <div
+        className="p-2 h-80 flex flex-wrap justify-center items-center 
+                      border rounded-tl-lg rounded-tr-lg"
+      >
+        <img src={element.img} alt={element.type} />
       </div>
       <div className="p-2 bg-slate-200 flex justify-between items-center rounded-br-lg rounded-bl-lg">
         <div>
