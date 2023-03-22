@@ -37,20 +37,21 @@ const Browse = ({ title }) => {
       <Navbar />
       <section>
         <div className="flex gap-4 w-full">
-          <div className="max-h-screen overflow-y-auto basis-96">
+          <div className="max-h-screen overflow-y-auto fixed w-80 scrollbar">
             <SideNav
               categories={filteredCategories}
               component={componentCategory}
               search={filterSearch}
             />
           </div>
-          <div className="w-full">
+          <div className="w-full ml-80">
             <div className="my-5"></div>
             {componentCategory === "" ? (
               <Featured />
             ) : (
               <ComponentCategory component={componentCategory} />
             )}
+            <div className="my-5"></div>
           </div>
         </div>
       </section>

@@ -1,5 +1,72 @@
 [
   {
+    "id": "button7",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "buttons/button7",
+    "type": "button",
+    "code": "/code/buttons/button7.txt",
+    "img": "/img/components/buttons/button7.png"
+  },
+  {
+    "id": "button6",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "buttons/button6",
+    "type": "button",
+    "code": "/code/buttons/button6.txt",
+    "img": "/img/components/buttons/button6.png"
+  },
+  {
+    "id": "button5",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "buttons/button5",
+    "type": "button",
+    "code": "/code/buttons/button5.txt",
+    "img": "/img/components/buttons/button5.png"
+  },
+  {
+    "id": "button4",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "buttons/button4",
+    "type": "button",
+    "code": "/code/buttons/button4.txt",
+    "img": "/img/components/buttons/button4.png"
+  },
+  {
+    "id": "button3",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "buttons/button3",
+    "type": "button",
+    "code": "/code/buttons/button3.txt",
+    "img": "/img/components/buttons/button3.png"
+  },
+  {
+    "id": "button2",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "buttons/button2",
+    "type": "button",
+    "code": "/code/buttons/button2.txt",
+    "img": "/img/components/buttons/button2.png"
+  },
+  {
+    "id": "button1",
     "name": "",
     "author": "Drag0",
     "profile_link": "https://github.com/chessrajat",

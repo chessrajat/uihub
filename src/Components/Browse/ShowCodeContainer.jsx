@@ -37,7 +37,7 @@ const ShowCodeContainer = () => {
       <Navbar />
       <div className="p-16">
         <div
-          className={`flex bg-gray-100 shadow-lg p-8 rounded-lg border ${
+          className={`flex bg-white shadow-lg p-8 rounded-lg border ${
             isCenter && "justify-center"
           }`}
         >
