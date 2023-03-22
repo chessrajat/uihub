@@ -1,3 +1,5 @@
+import { faRightLong } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ElementContainer from "../Browse/ElementContainer";
@@ -24,9 +26,12 @@ const Featured = () => {
       </p>
       <div className="relative flex py-5 items-center">
         <div className="flex-grow border-t border-gray-300"></div>
-        <span className="flex-shrink mx-4 text-gray-400">
-          <Link to="https://github.com/chessrajat/uihub/issues/new" target="_blank">
-            Issues? Give us feedback{" "}
+        <span className="flex-shrink mx-4 text-gray-500">
+          <Link
+            to="https://github.com/chessrajat/uihub/issues/new"
+            target="_blank"
+          >
+            Issues? Give us feedback <FontAwesomeIcon icon={faRightLong} />
           </Link>{" "}
         </span>
       </div>

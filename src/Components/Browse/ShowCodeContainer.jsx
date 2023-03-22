@@ -14,7 +14,7 @@ import { useParams } from "react-router-dom";
 const ShowCodeContainer = () => {
   const [copied, setCopied] = useState(false);
   const [code, setCode] = useState("");
-  const [isCenter, setIsCenter] = useState(false);
+  const [isCenter, setIsCenter] = useState(true);
 
   const params = useParams();
   const componentCategory = params.ComponentCategory || "";
