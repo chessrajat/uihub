@@ -1,0 +1,13 @@
+[
+  {
+    "id": "avatar1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "avatars/avatar1",
+    "type": "avatar",
+    "code": "/code/avatars/avatar1.txt",
+    "img": "/img/components/avatars/avatar1.png"
+  }
+]

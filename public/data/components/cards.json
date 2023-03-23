@@ -1,0 +1,13 @@
+[
+  {
+    "id": "card1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "cards/card1",
+    "type": "card",
+    "code": "/code/cards/card1.txt",
+    "img": "/img/components/cards/card1.png"
+  }
+]

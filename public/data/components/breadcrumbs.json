@@ -1,0 +1,13 @@
+[
+  {
+    "id": "breadcrumb1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "breadcrumbs/breadcrumb1",
+    "type": "avatar",
+    "code": "/code/breadcrumbs/breadcrumb1.txt",
+    "img": "/img/components/breadcrumbs/breadcrumb1.png"
+  }
+]

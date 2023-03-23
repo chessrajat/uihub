@@ -2,7 +2,6 @@ import { faMobile, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
-import Fallback from "./Fallback";
 
 const ElementContainer = ({ element }) => {
   return (
@@ -11,7 +10,12 @@ const ElementContainer = ({ element }) => {
         className="p-2 h-80 flex flex-wrap justify-center items-center 
                       border rounded-tl-lg rounded-tr-lg"
       >
-        <img src={element.img} alt={element.type} />
+        <img
+          src={element.img}
+          alt={element.type}
+          className="object-scale-down h-full w-full"
+          draggable={false}
+        />
       </div>
       <div className="p-2 bg-slate-200 flex justify-between items-center rounded-br-lg rounded-bl-lg">
         <div>

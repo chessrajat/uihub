@@ -1,10 +1,27 @@
 [
   {
+    "id": "avatars",
+    "text": "Avatars",
+    "description": "Avatar is a graphical representation of a user or entity in a software application or website, typically represented as a small square or circular image. Avatars can be personalized with a user's photo or custom image, and are commonly used in messaging applications, forums, and social media platforms to identify users and add a visual element to their profiles or messages."
+  },
+  {
     "id": "buttons",
-    "text": "Buttons"
+    "text": "Buttons",
+    "description": "Button elements represents a command or action that can be triggered by the user through a click or tap."
   },
   {
     "id": "navbars",
-    "text": "Navbars"
+    "text": "Navbars",
+    "description": "Navbar elements typically appears at the top of a website or application and contains links or buttons for navigating to different sections or pages within the site or app."
+  },
+  {
+    "id": "cards",
+    "text": "Cards",
+    "description": "Card UI is a website or application design pattern that displays information in small, rectangular containers called 'cards.' These cards can be used to present various types of content such as text, images, and videos. They are typically arranged in a grid format and can be used for displaying a variety of information, such as product listings, articles, user profiles, or social media posts. The card UI pattern has become increasingly popular due to its ability to provide a visually appealing and organized layout for content, while also being responsive and mobile-friendly."
+  },
+  {
+    "id": "breadcrumbs",
+    "text": "Breadcrumbs",
+    "description": "Breadcrumbs is a website or application navigation design pattern that displays a trail of links showing the user's current location within the website or application hierarchy. They should be placed at the top of the page, above the page's main content."
   }
 ]

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ElementContainer from "../Browse/ElementContainer";
 
-const ComponentCategory = ({ component }) => {
+const ComponentCategory = ({ component, description }) => {
   const [componentElements, setComponentElements] = useState([]);
 
   useEffect(() => {
@@ -19,6 +19,9 @@ const ComponentCategory = ({ component }) => {
     <section className="px-4">
       <div className="px-4">
         <h1 className="text-4xl font-bold py-3 capitalize">{component}</h1>
+        <p className="p-0.5 text-gray-700">
+          {description}
+        </p>
         <div className="relative flex py-5 items-center">
           <div className="flex-grow border-t border-gray-300"></div>
           <span className="flex-shrink mx-4 text-gray-500">
@@ -32,7 +35,7 @@ const ComponentCategory = ({ component }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 pr-8 pt-8 pl-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pr-8 pt-8 pl-4">
         {componentElements.map((element, i) => (
           <ElementContainer key={i} element={element} />
         ))}

@@ -35,9 +35,9 @@ const ShowCodeContainer = () => {
   return (
     <div className="font-poppins">
       <Navbar />
-      <div className="p-16">
+      <div className="p-3 md:p-5 lg:p-12">
         <div
-          className={`flex bg-white shadow-lg p-8 rounded-lg border ${
+          className={`flex bg-white shadow-lg p-2 md:p-4 lg:p-8 rounded-lg border overflow-hidden ${
             isCenter && "justify-center"
           }`}
         >
@@ -65,8 +65,8 @@ const ShowCodeContainer = () => {
           <CopyToClipboard
             text={code}
             onCopy={() => setCopied(true)}
-            className={`absolute text-white text-xl right-2 top-1 p-2 cursor-pointer
-             ${copied && "text-green-500"}`}
+            className={`absolute text-xl right-2 top-1 p-2 cursor-pointer
+             ${copied ? "text-green-500" : "text-white"}`}
           >
             <p>
               {copied && "Copied"} <FontAwesomeIcon icon={faCopy} />
@@ -76,7 +76,6 @@ const ShowCodeContainer = () => {
             language="jsx"
             style={atomDark}
             showLineNumbers
-            wrapLongLines
           >
             {code}
           </SyntaxHighlighter>
