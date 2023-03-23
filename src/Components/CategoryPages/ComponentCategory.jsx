@@ -18,13 +18,11 @@ const ComponentCategory = ({ component, description }) => {
   return (
     <section className="px-4">
       <div className="px-4">
-        <h1 className="text-4xl font-bold py-3 capitalize">{component}</h1>
-        <p className="p-0.5 text-gray-700">
-          {description}
-        </p>
+        <h1 className="text-4xl font-bold py-3 capitalize dark:text-white">{component}</h1>
+        <p className="p-0.5 text-gray-700 dark:text-gray-400">{description}</p>
         <div className="relative flex py-5 items-center">
           <div className="flex-grow border-t border-gray-300"></div>
-          <span className="flex-shrink mx-4 text-gray-500">
+          <span className="flex-shrink mx-4 text-gray-500 dark:text-gray-300">
             <Link
               to="https://github.com/chessrajat/uihub/issues/new"
               target="_blank"

@@ -8,6 +8,7 @@
     "element": "avatars/avatar1",
     "type": "avatar",
     "code": "/code/avatars/avatar1.txt",
-    "img": "/img/components/avatars/avatar1.png"
+    "img": "/img/components/light/avatars/avatar1.png",
+    "img_dark": "/img/components/dark/avatars/avatar1.png"
   }
 ]

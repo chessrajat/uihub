@@ -7,9 +7,12 @@ const CustomNavLink = ({ to, title }) => {
   return (
     <NavLink
       to={to}
-      className={`font-semibold hover:text-violet-700 ${
-        match ? "text-violet-700" : ""
-      }`}
+      className={`font-semibold hover:text-violet-700 
+                 dark:hover:text-white dark:font-normal ${
+                   match
+                     ? "text-violet-700 dark:text-white"
+                     : "dark:text-gray-300"
+                 }`}
     >
       {title}
     </NavLink>

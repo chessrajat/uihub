@@ -6,15 +6,17 @@ import Navbar from "./Navbar";
 
 const Home = () => {
   return (
-    <div className="font-poppins scrollbar">
+    <div className="font-poppins scrollbar dark:bg-slate-900">
       <Navbar />
       <main>
         <div
           style={{ backgroundImage: "url('/img/bg.jpg')" }}
           className="flex flex-col items-center bg-cover bg-no-repeat py-16"
         >
-          <p className="font-extrabold text-3xl md:text-5xl px-2
-                        text-white mt-24 max-w-3xl text-center leading-relaxed md:leading-relaxed">
+          <p
+            className="font-extrabold text-3xl md:text-5xl px-2
+                        text-white mt-24 max-w-3xl text-center leading-relaxed md:leading-relaxed"
+          >
             Open Source UI Components Build with Tailwind CSS
           </p>
           <p className="text-cyan-100 py-3 px-5 text-center text-sm md:text-base">
@@ -44,7 +46,10 @@ const Home = () => {
             </div>
             <div className="p-5 md:p-8 lg:p-10"></div>
             <div>
-              <p className="font-roboto text-xl md:text-4xl font-extrabold p-4 leading-7 md:leading-relaxed">
+              <p
+                className="font-roboto text-xl md:text-4xl font-extrabold p-4 leading-7 md:leading-relaxed
+                            dark:text-white"
+              >
                 Build Beautiful Websites Faster with UIHub
               </p>
             </div>
@@ -53,7 +58,10 @@ const Home = () => {
         <section className="flex justify-center my-20 md:px-2">
           <div className="max-w-4xl flex justify-between items-center w-full">
             <div>
-              <p className="font-roboto text-xl md:text-4xl font-extrabold p-4 leading-7 md:leading-relaxed">
+              <p
+                className="font-roboto text-xl md:text-4xl font-extrabold p-4 leading-7 md:leading-relaxed
+                            dark:text-white"
+              >
                 Create Visually Stunning Websites with Ease
               </p>
             </div>
@@ -78,7 +86,10 @@ const Home = () => {
             </div>
             <div className="p-5 md:p-8 lg:p-10"></div>
             <div>
-              <p className="font-roboto text-xl md:text-4xl font-extrabold p-4 leading-7 md:leading-relaxed">
+              <p
+                className="font-roboto text-xl md:text-4xl font-extrabold p-4 leading-7 md:leading-relaxed
+                            dark:text-white"
+              >
                 Transform Your Workflow with UIHub's Pre-built UI Components
               </p>
             </div>

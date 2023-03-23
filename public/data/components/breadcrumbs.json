@@ -8,6 +8,7 @@
     "element": "breadcrumbs/breadcrumb1",
     "type": "avatar",
     "code": "/code/breadcrumbs/breadcrumb1.txt",
-    "img": "/img/components/breadcrumbs/breadcrumb1.png"
+    "img": "/img/components/light/breadcrumbs/breadcrumb1.png",
+    "img_dark": ""
   }
 ]

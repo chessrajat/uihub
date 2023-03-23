@@ -15,8 +15,8 @@ const Featured = () => {
   }, []);
   return (
     <div className="px-8">
-      <h1 className="text-4xl font-bold py-3">Introduction</h1>
-      <p className="leading-relaxed text-gray-700">
+      <h1 className="text-4xl font-bold py-3 dark:text-white">Introduction</h1>
+      <p className="leading-relaxed text-gray-700 dark:text-gray-400">
         UIHub is a website that offers a wide range of pre-built UI components
         to help you create stunning websites in no time. With UIHub, you no
         longer have to start from scratch or spend countless hours designing and
@@ -26,7 +26,7 @@ const Featured = () => {
       </p>
       <div className="relative flex py-5 items-center">
         <div className="flex-grow border-t border-gray-300"></div>
-        <span className="flex-shrink mx-4 text-gray-500">
+        <span className="flex-shrink mx-4 text-gray-500 dark:text-gray-300">
           <Link
             to="https://github.com/chessrajat/uihub/issues/new"
             target="_blank"

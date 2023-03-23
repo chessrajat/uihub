@@ -27,21 +27,26 @@ const SideNav = ({ categories, component, search }) => {
         <Link to="/browse">
           <button
             className={`w-full text-left px-5 py-2 my-1 rounded-md
-                            font-semibold hover:bg-violet-200 ${
-                              component === "" && activeClasses
+                            font-semibold hover:bg-violet-200 
+                            dark:hover:bg-violet-700 dark:hover:text-white ${
+                              component === ""
+                                ? activeClasses
+                                : "dark:text-white"
                             }`}
           >
             Featured
           </button>
         </Link>
-
         <div className="border my-2 border-slate-500"></div>
         {categories.map((category, i) => (
           <Link key={i} to={`/browse/${category.id}`}>
             <button
               className={`w-full text-left px-5 py-2 my-1 rounded-md
-                              font-semibold hover:bg-violet-200  ${
-                                category.id === component && activeClasses
+                              font-semibold hover:bg-violet-200
+                              dark:hover:bg-violet-700 dark:hover:text-white  ${
+                                category.id === component
+                                  ? activeClasses
+                                  : "dark:text-white"
                               }`}
             >
               {category.text}

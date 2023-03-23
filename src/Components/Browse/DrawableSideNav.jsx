@@ -9,7 +9,8 @@ const DrawableSideNav = ({
   filterSearch,
 }) => {
   return (
-    <div className="w-72 bg-white h-full max-h-screen overflow-y-auto z-10 fixed top-16 shadow-xl">
+    <div className="w-72 bg-white h-full max-h-screen overflow-y-auto z-10 fixed top-16 shadow-xl 
+                    dark:bg-slate-900">
       <SideNav
         categories={filteredCategories}
         component={componentCategory}

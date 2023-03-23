@@ -8,7 +8,8 @@
     "element": "buttons/button7",
     "type": "button",
     "code": "/code/buttons/button7.txt",
-    "img": "/img/components/buttons/button7.png"
+    "img": "/img/components/light/buttons/button7.png",
+    "img_dark": ""
   },
   {
     "id": "button6",
@@ -19,7 +20,8 @@
     "element": "buttons/button6",
     "type": "button",
     "code": "/code/buttons/button6.txt",
-    "img": "/img/components/buttons/button6.png"
+    "img": "/img/components/light/buttons/button6.png",
+    "img_dark": ""
   },
   {
     "id": "button5",
@@ -30,7 +32,8 @@
     "element": "buttons/button5",
     "type": "button",
     "code": "/code/buttons/button5.txt",
-    "img": "/img/components/buttons/button5.png"
+    "img": "/img/components/light/buttons/button5.png",
+    "img_dark": ""
   },
   {
     "id": "button4",
@@ -41,7 +44,8 @@
     "element": "buttons/button4",
     "type": "button",
     "code": "/code/buttons/button4.txt",
-    "img": "/img/components/buttons/button4.png"
+    "img": "/img/components/light/buttons/button4.png",
+    "img_dark": ""
   },
   {
     "id": "button3",
@@ -52,7 +56,8 @@
     "element": "buttons/button3",
     "type": "button",
     "code": "/code/buttons/button3.txt",
-    "img": "/img/components/buttons/button3.png"
+    "img": "/img/components/light/buttons/button3.png",
+    "img_dark": ""
   },
   {
     "id": "button2",
@@ -63,7 +68,8 @@
     "element": "buttons/button2",
     "type": "button",
     "code": "/code/buttons/button2.txt",
-    "img": "/img/components/buttons/button2.png"
+    "img": "/img/components/light/buttons/button2.png",
+    "img_dark": ""
   },
   {
     "id": "button1",
@@ -74,6 +80,7 @@
     "element": "buttons/button1",
     "type": "button",
     "code": "/code/buttons/button1.txt",
-    "img": "/img/components/buttons/button1.png"
+    "img": "/img/components/light/buttons/button1.png",
+    "img_dark": ""
   }
 ]

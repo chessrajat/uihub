@@ -10,11 +10,14 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { useParams } from "react-router-dom";
+import useDarkMode from "../../Utils/Hooks/useDarkMode";
 
 const ShowCodeContainer = () => {
   const [copied, setCopied] = useState(false);
   const [code, setCode] = useState("");
+
   const [isCenter, setIsCenter] = useState(true);
+  const [theme] = useDarkMode();
 
   const params = useParams();
   const componentCategory = params.ComponentCategory || "";
@@ -32,14 +35,16 @@ const ShowCodeContainer = () => {
       });
   }, [componentCategory, componentName]);
 
+  useEffect(() => {}, [theme]);
+
   return (
-    <div className="font-poppins">
+    <div className="font-poppins dark:bg-slate-900 min-h-screen">
       <Navbar />
       <div className="p-3 md:p-5 lg:p-12">
         <div
-          className={`flex bg-white shadow-lg p-2 md:p-4 lg:p-8 rounded-lg border overflow-hidden ${
-            isCenter && "justify-center"
-          }`}
+          className={`flex shadow-lg p-2 md:p-4 lg:p-8 rounded-lg border overflow-hidden 
+                      bg-white dark:bg-slate-900
+          ${isCenter && "justify-center"}`}
         >
           <React.Suspense fallback={<Fallback />}>
             <Component />
@@ -47,8 +52,10 @@ const ShowCodeContainer = () => {
         </div>
         <div className="my-8">
           <div className="flex items-center">
-            <p className="mx-3 font-bold">Controls</p>
-            <div className="mx-5">
+            <p className="mx-3 font-bold dark:text-gray-200 dark:font-normal">
+              Controls
+            </p>
+            <div className="mx-5 space-x-4">
               <button
                 onClick={() => setIsCenter(!isCenter)}
                 className={`py-2 px-4 rounded-md
@@ -72,11 +79,7 @@ const ShowCodeContainer = () => {
               {copied && "Copied"} <FontAwesomeIcon icon={faCopy} />
             </p>
           </CopyToClipboard>
-          <SyntaxHighlighter
-            language="jsx"
-            style={atomDark}
-            showLineNumbers
-          >
+          <SyntaxHighlighter language="jsx" style={atomDark} showLineNumbers>
             {code}
           </SyntaxHighlighter>
         </div>

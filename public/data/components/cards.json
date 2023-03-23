@@ -8,6 +8,7 @@
     "element": "cards/card1",
     "type": "card",
     "code": "/code/cards/card1.txt",
-    "img": "/img/components/cards/card1.png"
+    "img": "/img/components/light/cards/card1.png",
+    "img_dark": ""
   }
 ]

@@ -47,7 +47,7 @@ const Browse = ({ title }) => {
     setMobileMenu(false);
   }, [componentCategory, categories]);
   return (
-    <section className="font-poppins select-none">
+    <section className="font-poppins select-none dark:bg-slate-900 min-h-screen">
       <Navbar />
       <section className={`${mobileMenu && "blur-sm scale-105 fixed"}`}>
         <div className="flex gap-4 w-full">

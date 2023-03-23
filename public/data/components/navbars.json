@@ -8,6 +8,7 @@
     "element": "navbars/navbar1",
     "type": "navbars",
     "code": "/code/navbars/navbar1.txt",
-    "img": "/img/components/navbars/navbar1.png"
+    "img": "/img/components/light/navbars/navbar1.png",
+    "img_dark": ""
   }
 ]
