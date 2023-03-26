@@ -18,6 +18,9 @@ const ShowCodeContainer = () => {
 
   const [isCenter, setIsCenter] = useState(true);
   const [theme] = useDarkMode();
+  const [isDarkMode, setIsDarkMode] = useState(
+    theme === "light" ? true : false
+  );
 
   const params = useParams();
   const componentCategory = params.ComponentCategory || "";
@@ -40,16 +43,19 @@ const ShowCodeContainer = () => {
   return (
     <div className="font-poppins dark:bg-slate-900 min-h-screen">
       <Navbar />
-      <div className="p-3 md:p-5 lg:p-12">
-        <div
-          className={`flex shadow-lg p-2 md:p-4 lg:p-8 rounded-lg border overflow-hidden 
+      <div className={`p-3 md:p-5 lg:p-12`}>
+        <div className={`${isDarkMode ? "dark" : "light"}`}>
+          <div
+            className={`flex shadow-lg py-8 px-2 md:px-4 lg:px-8 rounded-lg border overflow-hidden 
                       bg-white dark:bg-slate-900
           ${isCenter && "justify-center"}`}
-        >
-          <React.Suspense fallback={<Fallback />}>
-            <Component />
-          </React.Suspense>
+          >
+            <React.Suspense fallback={<Fallback />}>
+              <Component />
+            </React.Suspense>
+          </div>
         </div>
+
         <div className="my-8">
           <div className="flex items-center">
             <p className="mx-3 font-bold dark:text-gray-200 dark:font-normal">
@@ -65,6 +71,31 @@ const ShowCodeContainer = () => {
               >
                 Center
               </button>
+              {/* <button
+                  onClick={() => setIsDarkMode(!isDarkMode)}
+                  className={`py-2 px-4 rounded-md
+                     ${
+                       isDarkMode
+                         ? "bg-violet-800 text-white "
+                         : "bg-violet-200"
+                     }`}
+                >
+                  <span
+                    className={`${
+                      isDarkMode ? "bg-blue-500" : "bg-yellow-600"
+                    } inline-block h-6 w-6 rounded-full -mb-2`}
+                  >
+                    {isDarkMode ? (
+                      <FontAwesomeIcon
+                        icon={faMoon}
+                        className="text-white mt-1"
+                      />
+                    ) : (
+                      <BrightSun />
+                    )}
+                  </span>
+                  <span className="ml-2">Switch</span>
+                </button> */}
             </div>
           </div>
         </div>

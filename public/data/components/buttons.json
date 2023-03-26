@@ -9,7 +9,7 @@
     "type": "button",
     "code": "/code/buttons/button7.txt",
     "img": "/img/components/light/buttons/button7.png",
-    "img_dark": ""
+    "img_dark": "/img/components/dark/buttons/button7.png"
   },
   {
     "id": "button6",

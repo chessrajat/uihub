@@ -23,5 +23,15 @@
     "id": "breadcrumbs",
     "text": "Breadcrumbs",
     "description": "Breadcrumbs is a website or application navigation design pattern that displays a trail of links showing the user's current location within the website or application hierarchy. They should be placed at the top of the page, above the page's main content."
+  },
+  {
+    "id": "paginations",
+    "text": "Pagination",
+    "description": "Pagination is a UI element used for dividing large sets of data into smaller, more manageable pages."
+  },
+  {
+    "id": "form_textinputs",
+    "text": "Forms - Text Input",
+    "description": "Text input is a UI element used for collecting user information, creating forms, search boxes, comment sections, and editing text."
   }
 ]

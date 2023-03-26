@@ -1,0 +1,14 @@
+[
+  {
+    "id": "form_textinput1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "form_textinputs/form_textinput1",
+    "type": "textinput",
+    "code": "/code/form_textinputs/form_textinput1.txt",
+    "img": "/img/components/light/form_textinputs/form_textinput1.png",
+    "img_dark": ""
+  }
+]

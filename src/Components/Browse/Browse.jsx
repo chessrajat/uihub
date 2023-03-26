@@ -11,7 +11,7 @@ import SideNav from "./SideNav";
 const Browse = ({ title }) => {
   const [categories, setCategories] = useState([]);
   const [filteredCategories, setFilteredCategories] = useState([]);
-  const [categoryDescription, setCategoryDescription] = useState("");
+  const [currentCategory, setCurrentCategory] = useState({});
 
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -37,12 +37,13 @@ const Browse = ({ title }) => {
         setCategories(data);
         setFilteredCategories(data);
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     const desc = categories.filter((item) => item.id === componentCategory);
     if (desc.length > 0) {
-      setCategoryDescription(desc[0].description);
+      setCurrentCategory(desc[0]);
     }
     setMobileMenu(false);
   }, [componentCategory, categories]);
@@ -64,8 +65,7 @@ const Browse = ({ title }) => {
               <Featured />
             ) : (
               <ComponentCategory
-                component={componentCategory}
-                description={categoryDescription}
+                component={currentCategory}
               />
             )}
             <div className="my-5"></div>

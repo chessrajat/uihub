@@ -1,0 +1,14 @@
+[
+  {
+    "id": "pagination1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "paginations/pagination1",
+    "type": "paginations",
+    "code": "/code/paginations/pagination1.txt",
+    "img": "/img/components/light/paginations/pagination1.png",
+    "img_dark": "/img/components/dark/paginations/pagination1.png"
+  }
+]
