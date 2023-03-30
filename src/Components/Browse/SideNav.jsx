@@ -53,6 +53,7 @@ const SideNav = ({ categories, component, search }) => {
             </button>
           </Link>
         ))}
+        <div className="h-12"></div>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ const Browse = ({ title }) => {
   const [categories, setCategories] = useState([]);
   const [filteredCategories, setFilteredCategories] = useState([]);
   const [currentCategory, setCurrentCategory] = useState({});
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -62,14 +62,14 @@ const Browse = ({ title }) => {
       <Navbar />
       <section className={`${mobileMenu && "blur-sm scale-105 fixed"}`}>
         <div className="flex gap-4 w-full">
-          <div className="max-h-screen overflow-y-auto fixed w-0 md:w-56 xl:w-80">
+          <div className="max-h-screen overflow-y-auto fixed w-0 md:w-56 lg:w-60 xl:w-80">
             <SideNav
               categories={filteredCategories}
               component={componentCategory}
               search={filterSearch}
             />
           </div>
-          <div className="w-full ml-0 md:ml-48 xl:ml-80">
+          <div className="w-full ml-0 md:ml-52 lg:ml-56 xl:ml-80">
             <div className="my-5"></div>
             {!isLoading &&
             componentCategory !== "" &&

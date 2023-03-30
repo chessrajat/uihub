@@ -1,16 +1,66 @@
 [
   {
+    "id": "avatar1",
     "name": "",
     "author": "Drag0",
     "profile_link": "https://github.com/chessrajat",
     "responsive": true,
-    "element": "buttons/button1",
-    "type": "button",
-    "code": "/code/buttons/button1.txt",
-    "img": "/img/components/light/buttons/button1.png",
+    "element": "avatars/avatar1",
+    "type": "avatar",
+    "code": "/code/avatars/avatar1.txt",
+    "img": "/img/components/light/avatars/avatar1.png",
+    "img_dark": "/img/components/dark/avatars/avatar1.png"
+  },
+  {
+    "id": "breadcrumb1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "breadcrumbs/breadcrumb1",
+    "type": "avatar",
+    "code": "/code/breadcrumbs/breadcrumb1.txt",
+    "img": "/img/components/light/breadcrumbs/breadcrumb1.png",
     "img_dark": ""
   },
   {
+    "id": "button6",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "buttons/button6",
+    "type": "button",
+    "code": "/code/buttons/button6.txt",
+    "img": "/img/components/light/buttons/button6.png",
+    "img_dark": ""
+  },
+  {
+    "id": "card1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "cards/card1",
+    "type": "card",
+    "code": "/code/cards/card1.txt",
+    "img": "/img/components/light/cards/card1.png",
+    "img_dark": ""
+  },
+  {
+    "id": "form_textinput1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "form_textinputs/form_textinput1",
+    "type": "textinput",
+    "code": "/code/form_textinputs/form_textinput1.txt",
+    "img": "/img/components/light/form_textinputs/form_textinput1.png",
+    "img_dark": ""
+  },
+  {
+    "id": "navbar1",
     "name": "",
     "author": "Drag0",
     "profile_link": "https://github.com/chessrajat",
@@ -20,5 +70,29 @@
     "code": "/code/navbars/navbar1.txt",
     "img": "/img/components/light/navbars/navbar1.png",
     "img_dark": ""
+  },
+  {
+    "id": "pagination1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "paginations/pagination1",
+    "type": "paginations",
+    "code": "/code/paginations/pagination1.txt",
+    "img": "/img/components/light/paginations/pagination1.png",
+    "img_dark": "/img/components/dark/paginations/pagination1.png"
+  },
+  {
+    "id": "sidebar1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "sidebars/sidebar1",
+    "type": "sidebars",
+    "code": "/code/sidebars/sidebar1.txt",
+    "img": "/img/components/light/sidebars/sidebar1.png",
+    "img_dark": "/img/components/dark/sidebars/sidebar1.png"
   }
 ]

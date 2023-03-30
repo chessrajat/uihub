@@ -36,7 +36,42 @@
   },
   {
     "id": "form_textinputs",
-    "text": "Forms - Text Input",
+    "text": "Text Input - Forms",
     "description": "Text input is a UI element used for collecting user information, creating forms, search boxes, comment sections, and editing text."
+  },
+  {
+    "id": "pages_login",
+    "text": "Login - Pages",
+    "description": "A login-in page is a UI element used for authentication and access control, requiring users to provide valid login credentials before accessing a website or application."
+  },
+  {
+    "id": "pages_register",
+    "text": "Register - Pages",
+    "description": "A register page is a UI element used for creating new user accounts and collecting necessary information such as name, email address, and password."
+  },
+  {
+    "id": "pages_error",
+    "text": "Error - Pages",
+    "description": "An error page is a UI element that appears when a website or application encounters an error, displaying a message or graphic that informs the user that something has gone wrong."
+  },
+  {
+    "id": "sections_cta",
+    "text": "Call to Action (CTA) - Section",
+    "description": "A call-to-action is a UI element used to encourage users to take a specific action, such as signing up for a service or purchasing a product, typically displayed prominently and using persuasive language and design."
+  },
+  {
+    "id": "sections_features",
+    "text": "Features - Section",
+    "description": "A features section is a UI element used to showcase the key features and functionalities of a product or service, typically presented in a visually engaging manner with concise descriptions and illustrations."
+  },
+  {
+    "id": "sections_footers",
+    "text": "Footers - Section",
+    "description": "A footer section is a UI element used for displaying additional information or navigation options at the bottom of a webpage, typically including copyright notices, contact information, and links to important pages."
+  },
+  {
+    "id": "sections_pricing",
+    "text": "Pricing - Section",
+    "description": "A pricing section is a UI element used to display different pricing options for a product or service, typically presented in a table format with clear descriptions of the features and benefits of each option."
   }
 ]
