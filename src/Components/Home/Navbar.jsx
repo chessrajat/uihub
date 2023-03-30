@@ -26,10 +26,22 @@ const Navbar = () => {
     >
       <div className="flex items-center">
         <Link to="/" className="flex items-center">
-          <img src={`${isDarkMode ? "/img/logo_light.svg" : "/img/logo.svg"}`} alt="logo" className="w-10" />
+          <img
+            src={`${isDarkMode ? "/img/logo_light.svg" : "/img/logo.svg"}`}
+            alt="logo"
+            className="w-10"
+          />
           <p className="font-semibold text-xl ml-2 hidden md:block dark:text-white">
-            Tailwind <span className="text-violet-700 dark:text-violet-300">UIHUB</span>
+            Tailwind{" "}
+            <span className="text-violet-700 dark:text-violet-300">UIHUB</span>
           </p>
+          <span
+            className="whitespace-nowrap rounded px-1.5 align-middle font-medium leading-4 
+                            tracking-wide text-xs border border-slate-400/70 
+                            text-slate-500 dark:border-slate-600 dark:text-slate-400 ml-2"
+          >
+            Beta
+          </span>
         </Link>
         <div className="ml-5 md:ml-10">
           <CustomNavLink to="/browse" title="Browse" />

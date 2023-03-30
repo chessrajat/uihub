@@ -9,7 +9,7 @@ import Fallback from "./Fallback";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useDarkMode from "../../Utils/Hooks/useDarkMode";
 
 const ShowCodeContainer = () => {
@@ -38,22 +38,22 @@ const ShowCodeContainer = () => {
       });
   }, [componentCategory, componentName]);
 
-  useEffect(() => {}, [theme]);
+  useEffect(() => {
+    setIsDarkMode(theme === "light" ? true : false);
+  }, [theme]);
 
   return (
     <div className="font-poppins dark:bg-slate-900 min-h-screen">
       <Navbar />
       <div className={`p-3 md:p-5 lg:p-12`}>
-        <div className={`${isDarkMode ? "dark" : "light"}`}>
-          <div
-            className={`flex shadow-lg py-8 px-2 md:px-4 lg:px-8 rounded-lg border overflow-hidden 
-                      bg-white dark:bg-slate-900
+        <div
+          className={`flex shadow-lg py-8 px-2 md:px-4 lg:px-8 rounded-lg border overflow-hidden 
+                      bg-white dark:bg-slate-900 dark:border-gray-800
           ${isCenter && "justify-center"}`}
-          >
-            <React.Suspense fallback={<Fallback />}>
-              <Component />
-            </React.Suspense>
-          </div>
+        >
+          <React.Suspense fallback={<Fallback />}>
+            <Component />
+          </React.Suspense>
         </div>
 
         <div className="my-8">

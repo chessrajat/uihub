@@ -15,6 +15,11 @@
     "description": "Navbar elements typically appears at the top of a website or application and contains links or buttons for navigating to different sections or pages within the site or app."
   },
   {
+    "id": "sidebars",
+    "text": "Sidebars",
+    "description": "A sidebar is a UI element used for displaying additional information or navigation options alongside the main content of a webpage or application."
+  },
+  {
     "id": "cards",
     "text": "Cards",
     "description": "Card UI is a website or application design pattern that displays information in small, rectangular containers called 'cards.' These cards can be used to present various types of content such as text, images, and videos. They are typically arranged in a grid format and can be used for displaying a variety of information, such as product listings, articles, user profiles, or social media posts. The card UI pattern has become increasingly popular due to its ability to provide a visually appealing and organized layout for content, while also being responsive and mobile-friendly."

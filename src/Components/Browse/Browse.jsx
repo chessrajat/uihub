@@ -1,9 +1,10 @@
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ComponentCategory from "../CategoryPages/ComponentCategory";
 import Featured from "../CategoryPages/Featured";
+import Error404 from "../Errors/Error404";
 import Navbar from "../Home/Navbar";
 import DrawableSideNav from "./DrawableSideNav";
 import SideNav from "./SideNav";
@@ -12,6 +13,7 @@ const Browse = ({ title }) => {
   const [categories, setCategories] = useState([]);
   const [filteredCategories, setFilteredCategories] = useState([]);
   const [currentCategory, setCurrentCategory] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -27,6 +29,13 @@ const Browse = ({ title }) => {
     setFilteredCategories(updatedList);
   };
 
+  const content =
+    componentCategory === "" ? (
+      <Featured />
+    ) : (
+      <ComponentCategory component={currentCategory} />
+    );
+
   useEffect(() => {
     document.title = title;
     fetch("/data/categories.json")
@@ -37,7 +46,7 @@ const Browse = ({ title }) => {
         setCategories(data);
         setFilteredCategories(data);
       });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -46,6 +55,7 @@ const Browse = ({ title }) => {
       setCurrentCategory(desc[0]);
     }
     setMobileMenu(false);
+    setIsLoading(false);
   }, [componentCategory, categories]);
   return (
     <section className="font-poppins select-none dark:bg-slate-900 min-h-screen">
@@ -61,12 +71,12 @@ const Browse = ({ title }) => {
           </div>
           <div className="w-full ml-0 md:ml-48 xl:ml-80">
             <div className="my-5"></div>
-            {componentCategory === "" ? (
-              <Featured />
+            {!isLoading &&
+            componentCategory !== "" &&
+            Object.keys(currentCategory).length === 0 ? (
+              <Error404 />
             ) : (
-              <ComponentCategory
-                component={currentCategory}
-              />
+              content
             )}
             <div className="my-5"></div>
           </div>

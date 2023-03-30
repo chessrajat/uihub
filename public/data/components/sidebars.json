@@ -1,0 +1,14 @@
+[
+  {
+    "id": "sidebar1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "sidebars/sidebar1",
+    "type": "sidebars",
+    "code": "/code/sidebars/sidebar1.txt",
+    "img": "/img/components/light/sidebars/sidebar1.png",
+    "img_dark": "/img/components/dark/sidebars/sidebar1.png"
+  }
+]
