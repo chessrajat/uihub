@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "sections_features1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "sections_features/sections_features1",
+    "type": "Features",
+    "code": "/code/sections_features/sections_features1.txt",
+    "img": "/img/components/light/sections_features/sections_features1.png",
+    "img_dark": ""
+  }
+]
