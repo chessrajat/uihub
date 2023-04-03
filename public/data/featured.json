@@ -1,5 +1,17 @@
 [
   {
+    "id": "pages_login1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "pages_login/pages_login1",
+    "type": "avatar",
+    "code": "/code/pages_login/pages_login1.txt",
+    "img": "/img/components/light/pages_login/pages_login1.png",
+    "img_dark": ""
+  },
+  {
     "id": "sections_features1",
     "name": "",
     "author": "Drag0",

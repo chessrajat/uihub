@@ -1,0 +1,14 @@
+[
+  {
+    "id": "form_checkbox1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "form_checkboxes/form_checkbox1",
+    "type": "textinput",
+    "code": "/code/form_checkboxes/form_checkbox1.txt",
+    "img": "/img/components/light/form_checkboxes/form_checkbox1.png",
+    "img_dark": "/img/components/dark/form_checkboxes/form_checkbox1.png"
+  }
+]

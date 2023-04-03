@@ -40,6 +40,11 @@
     "description": "Text input is a UI element used for collecting user information, creating forms, search boxes, comment sections, and editing text."
   },
   {
+    "id": "form_checkboxes",
+    "text": "Checkboxes - Forms",
+    "description": "Checkboxes are UI elements that allow users to select one or more options from a list of choices."
+  },
+  {
     "id": "pages_login",
     "text": "Login - Pages",
     "description": "A login-in page is a UI element used for authentication and access control, requiring users to provide valid login credentials before accessing a website or application."
