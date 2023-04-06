@@ -1,5 +1,17 @@
 [
   {
+    "id": "sections_pricing1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "sections_pricing/sections_pricing1",
+    "type": "Features",
+    "code": "/code/sections_pricing/sections_pricing1.txt",
+    "img": "/img/components/light/sections_pricing/sections_pricing1.png",
+    "img_dark": ""
+  },
+  {
     "id": "pages_login1",
     "name": "",
     "author": "Drag0",
