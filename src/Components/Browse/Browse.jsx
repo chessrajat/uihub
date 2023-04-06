@@ -1,7 +1,7 @@
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ComponentCategory from "../CategoryPages/ComponentCategory";
 import Featured from "../CategoryPages/Featured";
 import Error404 from "../Errors/Error404";

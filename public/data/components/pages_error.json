@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "pages_error1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": false,
+    "element": "pages_error/pages_error1",
+    "type": "avatar",
+    "code": "/code/pages_error/pages_error1.txt",
+    "img": "/img/components/light/pages_error/pages_error1.png",
+    "img_dark": ""
+  }
+]

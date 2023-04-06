@@ -1,26 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import {
-  atomDark,
-  prism,
-} from "react-syntax-highlighter/dist/esm/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Navbar from "../Home/Navbar";
 import Fallback from "./Fallback";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate, useParams } from "react-router-dom";
-import useDarkMode from "../../Utils/Hooks/useDarkMode";
+import { useParams } from "react-router-dom";
 
 const ShowCodeContainer = () => {
   const [copied, setCopied] = useState(false);
   const [code, setCode] = useState("");
 
   const [isCenter, setIsCenter] = useState(true);
-  const [theme] = useDarkMode();
-  const [isDarkMode, setIsDarkMode] = useState(
-    theme === "light" ? true : false
-  );
+  const [isLightBG, setIsLightBG] = useState(true);
+  // const [theme] = useDarkMode();
+  // const [isDarkMode, setIsDarkMode] = useState(
+  //   theme === "light" ? true : false
+  // );
 
   const params = useParams();
   const componentCategory = params.ComponentCategory || "";
@@ -38,9 +35,9 @@ const ShowCodeContainer = () => {
       });
   }, [componentCategory, componentName]);
 
-  useEffect(() => {
-    setIsDarkMode(theme === "light" ? true : false);
-  }, [theme]);
+  // useEffect(() => {
+  //   setIsDarkMode(theme === "light" ? true : false);
+  // }, [theme]);
 
   return (
     <div className="font-poppins dark:bg-slate-900 min-h-screen">
@@ -48,7 +45,9 @@ const ShowCodeContainer = () => {
       <div className={`p-3 md:p-5 lg:p-12`}>
         <div
           className={`flex shadow-lg py-8 px-2 md:px-4 lg:px-8 rounded-lg border overflow-hidden 
-                      bg-white dark:bg-slate-900 dark:border-gray-800
+                      ${
+                        isLightBG ? "bg-white" : "bg-slate-900"
+                      }  dark:border-gray-800
           ${isCenter && "justify-center"}`}
         >
           <React.Suspense fallback={<Fallback />}>
@@ -70,6 +69,15 @@ const ShowCodeContainer = () => {
                      }`}
               >
                 Center
+              </button>
+              <button
+                onClick={() => setIsLightBG(!isLightBG)}
+                className={`py-2 px-4 rounded-md
+                     ${
+                       isLightBG ? "bg-violet-800 text-white " : "bg-violet-200"
+                     }`}
+              >
+                Toogle Background
               </button>
               {/* <button
                   onClick={() => setIsDarkMode(!isDarkMode)}
