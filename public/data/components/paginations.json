@@ -1,5 +1,17 @@
 [
   {
+    "id": "pagination2",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": true,
+    "element": "paginations/pagination2",
+    "type": "paginations",
+    "code": "/code/paginations/pagination2.txt",
+    "img": "/img/components/light/paginations/pagination2.png",
+    "img_dark": ""
+  },
+  {
     "id": "pagination1",
     "name": "",
     "author": "Drag0",

@@ -44,7 +44,7 @@ const ShowCodeContainer = () => {
       <Navbar />
       <div className={`p-3 md:p-5 lg:p-12`}>
         <div
-          className={`flex shadow-lg py-8 px-2 md:px-4 lg:px-8 rounded-lg border overflow-hidden 
+          className={`flex shadow-lg dark:shadow-none py-8 rounded-lg overflow-hidden 
                       ${
                         isLightBG ? "bg-white" : "bg-slate-900"
                       }  dark:border-gray-800
