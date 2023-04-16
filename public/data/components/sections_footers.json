@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "sections_footer1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": false,
+    "element": "sections_footers/sections_footer1",
+    "type": "Footers",
+    "code": "/code/sections_footers/sections_footer1.txt",
+    "img": "/img/components/light/sections_footers/sections_footer1.png",
+    "img_dark": ""
+  }
+]

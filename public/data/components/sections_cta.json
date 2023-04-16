@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "sections_cta1",
+    "name": "",
+    "author": "Drag0",
+    "profile_link": "https://github.com/chessrajat",
+    "responsive": false,
+    "element": "sections_cta/sections_cta1",
+    "type": "CTA",
+    "code": "/code/sections_cta/sections_cta1.txt",
+    "img": "/img/components/light/sections_cta/sections_cta1.png",
+    "img_dark": ""
+  }
+]

@@ -13,15 +13,15 @@ const Home = () => {
           style={{ backgroundImage: "url('/img/bg.jpg')" }}
           className="flex flex-col items-center bg-cover bg-no-repeat py-16"
         >
-          <p
+          <h1
             className="font-extrabold text-3xl md:text-5xl px-2
                         text-white mt-24 max-w-3xl text-center leading-relaxed md:leading-relaxed"
           >
             Open Source UI Components Build with Tailwind CSS
-          </p>
-          <p className="text-cyan-100 py-3 px-5 text-center text-sm md:text-base">
+          </h1>
+          <h2 className="text-cyan-100 py-3 px-5 text-center text-sm md:text-base">
             Build your next project even faster with UIHUB
-          </p>
+          </h2>
           <Link to="/browse">
             <button className="px-6 py-2 bg-cyan-50 hover:bg-cyan-100 text-violet-800 font-semibold rounded-md my-16">
               Browse All{" "}
@@ -46,24 +46,24 @@ const Home = () => {
             </div>
             <div className="p-5 md:p-8 lg:p-10"></div>
             <div>
-              <p
+              <h3
                 className="font-roboto text-xl md:text-4xl font-extrabold p-4 leading-7 md:leading-relaxed
                             dark:text-white"
               >
                 Build Beautiful Websites Faster with UIHub
-              </p>
+              </h3>
             </div>
           </div>
         </section>
         <section className="flex justify-center my-20 md:px-2">
           <div className="max-w-4xl flex justify-between items-center w-full">
             <div>
-              <p
+              <h3
                 className="font-roboto text-xl md:text-4xl font-extrabold p-4 leading-7 md:leading-relaxed
                             dark:text-white"
               >
                 Create Visually Stunning Websites with Ease
-              </p>
+              </h3>
             </div>
             <div className="p-5 md:p-8 lg:p-10"></div>
             <div className="w-full md:w-9/12">
@@ -86,12 +86,12 @@ const Home = () => {
             </div>
             <div className="p-5 md:p-8 lg:p-10"></div>
             <div>
-              <p
+              <h3
                 className="font-roboto text-xl md:text-4xl font-extrabold p-4 leading-7 md:leading-relaxed
                             dark:text-white"
               >
                 Transform Your Workflow with UIHub's Pre-built UI Components
-              </p>
+              </h3>
             </div>
           </div>
         </section>
